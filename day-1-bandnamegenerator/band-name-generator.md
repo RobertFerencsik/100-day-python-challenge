@@ -13,6 +13,7 @@
 - Use **input()** to get data from console
 - Nest the **input()** function inside **print()** to use your input in the print statement
 - Use **variables** to store your data
+- Use **type()** to check the type of the variable or output
 - **Highlight** the part you want to wrap and write the opening parenthesis ( (in pycharm)
 -  **Variable naming**
     - cannot start with number, start with underscore or char of the alphabet
