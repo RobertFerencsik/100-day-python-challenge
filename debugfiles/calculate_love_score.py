@@ -1,7 +1,9 @@
 def calculate_love_score(name1, name2):
     """
     Calculates the “love score” between two names 
-    by counting how many letters from the words “true” and “love” appear in those names.
+    by counting how many letters appear in the word "true" in the names
+    then does the same for the word "love". The score is then calculated 
+    by concatenating the two numbers and converting to int.
 
     Args:
         name1 (str): The first name to calculate the love score for.
@@ -21,7 +23,7 @@ def calculate_love_score(name1, name2):
             sum_of_matching_chars += calculate_matching_chars(name, word)
         concat_nums += str(sum_of_matching_chars)
     #print(sum_of_matching_chars)
-    return sum_of_matching_chars
+    return concat_nums
     
 def calculate_matching_chars(name, word):
     """
