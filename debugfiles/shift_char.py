@@ -7,9 +7,9 @@ def encrypt(original_text, shift_amount):
     encrypted_text = []
 
     for char in original_text:
-        index_encoded = alphabet.index(char) + shift_amount
-        while index_encoded > len(alphabet) - 1:
-            index_encoded -= len(alphabet)
+        index_encoded = (alphabet.index(char) + shift_amount) % len(alphabet)
+        #while index_encoded > len(alphabet) - 1:
+        #    index_encoded -= len(alphabet)
         encrypted_text.append(alphabet[index_encoded])
 
     print(str(encrypted_text))
