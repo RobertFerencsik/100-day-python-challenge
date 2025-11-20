@@ -9,14 +9,17 @@ def calculate_love_score(name1, name2):
     Returns:
         int: The love score between the two names.
     """
+def calculate_love_score(name1, name2):
     names = [name1, name2]
     words = ["true", "love"]
     lambda x: names[x].tolower()
+    concat_nums = ""
     
-    sum_of_matching_chars = 0
-    for name in names:
-        for word in words:
+    for word in words:
+        sum_of_matching_chars = 0
+        for name in names:
             sum_of_matching_chars += calculate_matching_chars(name, word)
+        concat_nums += str(sum_of_matching_chars)
     #print(sum_of_matching_chars)
     return sum_of_matching_chars
     
