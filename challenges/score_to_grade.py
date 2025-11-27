@@ -10,10 +10,16 @@ student_scores = {
 def scores_to_grades(scores):
     """
     Converts student scores to grades.
+
     Args:
         scores (dict): A dictionary of student scores.
+
     Returns:
         dict: A dictionary of student grades.
+
+    Raises:
+    TypeError:
+    ValueError:
     """
     for key in scores:
         if scores[key] < 71:
